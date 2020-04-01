@@ -13,7 +13,7 @@
     </head>
     <body class="sb-nav-fixed"> 
          
-        <nav class="sb-topnav navbar navbar-expand navbar-blue bg-blue" style="background-image: url('images/imagen.PNG');">
+        <nav class="sb-topnav navbar navbar-expand navbar-blue bg-blue" style="background-image: url('images/inv.PNG');">
             <a class="navbar-brand" href="index.html">Market</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             
@@ -72,10 +72,68 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    
-                    <!-- Aquí va el contenido de las páginas :'v -->
+                    <div class="container-fluid">
 
+                        <div class="text-center">
+                            <h1 class="mt-2">Inventario</h1>
+                            <ol class="breadcrumb mb-4">
+                                <li class="breadcrumb-item active"></li>
+                            </ol>
+                        </div>
 
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-light" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th width="40%">PRODUCTO</th>
+                                                <th width="30%">EN EXISTENCIA</th>
+                                                <th width="30%">FECHA DE ACTUALIZACIÓN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="images/c_cora.PNG" class="img-fluid" width="25%" alt="Collar corazón">Collar corazón</td>
+                                                <td class="text-center"><a class="abundante">320 en Stock</a></td>
+                                                <td class="text-center">03/03/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/p_azul.PNG" class="img-fluid" width="25%" alt="Playera Azul">Playera Azul</td>
+                                                <td class="text-center"><a class="noStock">Stock Agotado</a></td>
+                                                <td class="text-center">01/03/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/p_blanca.PNG" class="img-fluid" width="25%" alt="Playera Blanca">Playera Blanca</td>
+                                                <td class="text-center"><a class="escazo">3 en Stock</a></td>
+                                                <td class="text-center">02/03/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/z_cafes.PNG" class="img-fluid" width="25%" alt="Zapatillas cafés">Zapatillas cafés</td>
+                                                <td class="text-center"><a class="escazo">3 en Stock</a></td>
+                                                <td class="text-center">03/03/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/c_lila.PNG" class="img-fluid" width="25%" alt="Collar Lila">Collar Lila</td>
+                                                <td class="text-center"><a class="abundante">320 en Stock</a></td>
+                                                <td class="text-center">03/03/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/ca_azul.PNG" class="img-fluid" width="25%" alt="Camisa Azul">Camisa Azul</td>
+                                                <td class="text-center"><a class="noStock">Stock Agotado</a></td>
+                                                <td class="text-center">01/03/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/s_negro.PNG" class="img-fluid" width="25%" alt="Saco Negro">Saco Negro</td>
+                                                <td class="text-center"><a class="escazo">3 en Stock</a></td>
+                                                <td class="text-center">02/03/2020</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
