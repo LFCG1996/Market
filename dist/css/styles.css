@@ -10423,8 +10423,8 @@ body {
   bottom:0px;
 }
 .botonF1{
-  width:70px;
-  height:70px;
+  width:60px;
+  height:60px;
   border-radius:100%;
   background:rgb(70, 172, 255);
   right:0;
@@ -10435,16 +10435,22 @@ body {
   border:none;
   outline:none;
   color:rgba(243, 235, 235, 0.644);
-  font-size:80px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition:.3s; 
-  line-height: 50px; 
+  display: flex;
+  align-items: center;
 }
-.botonF1:hover{
+.botonF1 a{
+  color: white;
+  font-size: 36px;
+  margin: 0 auto;
+  height: 100%;
+}
+.botonF1 a:hover{
   color:rgb(243, 235, 235);
   text-decoration: none;
 }
-.botonF1:active{
+.botonF1 a:active{
   transform:scale(1.1);
 }
 
