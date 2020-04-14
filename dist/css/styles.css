@@ -10542,7 +10542,7 @@ input[type=radio] {
 input[type=radio] + label {
   width: 33.33%;
   color: rgb(131, 126, 126);
-  font-size: medium;
+  font-size: small;
   text-align: center;
   display:inline-block;
   margin:-3px;
@@ -10576,7 +10576,7 @@ input[type=radio]:checked + label {
 }
 
 .colors input[type=checkbox]:checked + label  { 
-  background: url('check_on.PNG') center center no-repeat;
+  background: url('check_on.png') center center no-repeat;
 }
 
 .colors input[type=checkbox]:not(:checked) + label {
@@ -10689,6 +10689,6 @@ input[type=radio]:checked + label {
   border-radius:.25rem;
 }
 .tallas_check input[type="checkbox"]:checked + label span {
-	background: url('check_on2.PNG') center center no-repeat;
+	background: url('check_on2.png') center center no-repeat;
 	background-size: cover;
 }
