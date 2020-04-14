@@ -10270,6 +10270,14 @@ body {
   padding-left: 3rem;
 }
 
+.btn-producto{
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top:0.8rem;
+  padding-bottom:0.8rem;
+  border-radius: 2rem;
+}
+
 .btn-modify{
   padding-right: 2rem;
   padding-left: 2rem;
@@ -10520,4 +10528,167 @@ body {
 
 .card-tienda .card-title{
   min-height: 50px;
+}
+#productName{
+  border: 1px solid #3697f8;
+}
+/*          Radio buttons             */
+
+input[type=radio] {
+  display:none; 
+  margin:10px;
+}
+
+input[type=radio] + label {
+  width: 33.33%;
+  color: rgb(131, 126, 126);
+  font-size: medium;
+  text-align: center;
+  display:inline-block;
+  margin:-3px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-top: solid 1px rgb(120, 166, 253);
+  border-bottom: solid 1px rgb(120, 166, 253);
+}
+
+input[type=radio]:checked + label { 
+ background-image: none;
+  background-color:#50a8ca4f;
+}
+
+/*          Checkbox colors             */
+.colors input[type=checkbox] {
+  display: none; 
+  margin:10px;
+}
+
+.colors input[type=checkbox] + label {
+  width: 27px;
+  height:27px;
+  color: rgb(131, 126, 126);
+  text-align: center;
+  display:inline-block;
+  margin-left:7px;
+  margin-right:7px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px 0px rgba(176,170,176,1);
+}
+
+.colors input[type=checkbox]:checked + label  { 
+  background: url('check_on.PNG') center center no-repeat;
+}
+
+.colors input[type=checkbox]:not(:checked) + label {
+  background-image: none;
+}
+
+#c_arena{
+  background-color: #ddbf6d;
+}
+#c_carne{
+  background-color: #f5bd9d;
+}
+#c_aqua{
+  background-color: #4aa2ff;
+}
+#c_blanco{
+  background-color: rgba(233, 227, 227, 0.74);
+}
+#c_gris{
+  background-color: rgb(170, 170, 170);
+}
+#c_negro{
+  background-color: rgb(17, 17, 17);
+}
+#c_cafe{
+  background-color: #7e6349;
+}
+#c_marino{
+  background-color: rgb(11, 28, 177);
+}
+#c_rosa{
+  background-color: rgb(255, 0, 191);
+}
+#c_rojo{
+  background-color: rgb(233, 48, 48);
+}
+#c_verde{
+  background-color: rgb(37, 167, 48);
+}
+
+/*          Number input             */
+
+.input-number{
+  text-align:center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #999797;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgb(120, 166, 253);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-number {
+  color: rgba(255, 254, 254, 0.808);
+  background-color: #c1c5c194;
+  border-color: none;
+  border-radius: 100%;
+}
+
+.btn-number:hover {
+  color: rgba(255, 254, 254, 0.808);
+  background-color: #a7a8a7;
+  border-color: none;
+}
+.btn-number:active {
+  color: #fff;
+  background-color: #a7a8a7;
+  border-color: none;
+}
+.btn-number:focus, .btn-number.focus {
+  color: #fff;
+  background-color: #a7a8a7;
+  border-color: none;
+}
+.btn-number.disabled, .btn-number:disabled {
+  color: #fff;
+  background-color: #a8a8a84b;
+  border-color: none;
+}
+.btn-number:not(:disabled):not(.disabled):active, .btn-number:not(:disabled):not(.disabled).active, .show > .btn-number.dropdown-toggle {
+  color: #fff;
+  background-color: #a7a8a7;
+  border-color: none;
+}
+
+/*          File input             */
+.img-file-input {
+  height: 75px;
+  margin: 10px 5px 0 0;
+}
+
+/* Checkbox tallas*/
+.tallas_check input[type="checkbox"] {
+	display: none;
+}
+
+.tallas_check input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+  background-color:#fff;
+  border: 1px solid rgb(120, 166, 253);
+  border-radius:.25rem;
+}
+.tallas_check input[type="checkbox"]:checked + label span {
+	background: url('check_on2.PNG') center center no-repeat;
+	background-size: cover;
 }

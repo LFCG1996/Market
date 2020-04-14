@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Market - Nuevo Producto</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed"> 
+         
+        <nav class="sb-topnav navbar navbar-expand navbar-blue bg-blue" style="background-image: url('images/foto.PNG');">
+            <a class="navbar-brand" href="MisProductos.html">Market</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+            
+            <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0" >
+            </div>
+            
+            <div class="ml-auto ml-md-0">
+            </div>
+        </nav>
+
+        <!--Menú lateral-->
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-blue" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+
+                            <a class="nav-link" href="MisProductos.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Mis Productos
+                            </a>
+
+                            <a class="nav-link" href="Inventario.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tasks"></i></div>
+                                Inventario
+                            </a>
+
+                            <a class="nav-link" href="Fotografos.html">
+                                <div class="sb-nav-link-icon"><i class="far fa-user"></i></div>
+                                Fotógrafos 
+                            </a>
+
+                            <a class="nav-link" href="Influencers.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-splotch"></i></div>
+                                Influencers
+                            </a>
+
+                            <a class="nav-link" href="Modelos.html">
+                                <div class="sb-nav-link-icon"><i class="far fa-user"></i></div>
+                                Modelos
+                            </a>
+
+                            <a class="nav-link" href="Envios.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-truck"></i></div>
+                                Servicios de Envío
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Loggeado como:</div>
+                        User name
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+
+                        <div class="text-center">
+                            <h1 class="mt-2 font-weight-bolder-grey">Agregar Producto</h1>
+                        </div>
+                        <br>
+                        <form>  
+                            <div class="row">
+                                <div class="col-xl-6 col-md-6">
+
+                                    <div class="card bg-light shadow-lg text-grey mb-4">
+                                        <br>
+                                        <div class="form-group" style="padding-left: 10px; padding-right:10px;"><label class=" mb-1" for="productName">Nombre del Producto: </label><input class="form-control py-3" id="productName" name="productName" type="text" placeholder="Nombre del producto" /></div>
+                                        <div class="form-group" style="padding-left: 10px; padding-right:10px;">
+                                            <label class=" mb-1">Categoría: </label>
+                                            <br>
+                                            <input type="radio" id="radio1" name="categoria" value="calzado" checked>
+                                                <label for="radio1" style="border-left: solid 1px rgb(120, 166, 253); border-bottom-left-radius:.25rem; border-top-left-radius:.25rem;">Calzado</label>
+                                            <input type="radio" id="radio2" name="categoria" value="ropa">
+                                                <label for="radio2">Ropa</label>
+                                            <input type="radio" id="radio3" name="categoria" value="accesorios">
+                                                <label for="radio3" style="border-right: solid 1px rgb(120, 166, 253); border-top-right-radius:.25rem; border-bottom-right-radius:.25rem;">Accesorios</label> 
+                                        </div>
+                                        <div class="form-group colors" style="padding-left: 10px; padding-right:10px;">
+                                            <label class=" mb-1">Colores disponibles: </label>
+                                            <br>
+                                            <input type="checkbox" id="check1" name="colores" value="arena">
+                                                <label for="check1" id="c_arena"></label>
+                                            <input type="checkbox" id="check2" name="colores" value="carne">
+                                                <label for="check2" id="c_carne"></label>
+                                            <input type="checkbox" id="check3" name="colores" value="aqua">
+                                                <label for="check3" id="c_aqua"></label>
+                                            <input type="checkbox" id="check4" name="colores" value="blanco">
+                                                <label for="check4" id="c_blanco"></label>
+                                            <input type="checkbox" id="check5" name="colores" value="gris">
+                                                <label for="check5" id="c_gris"></label>
+                                            <input type="checkbox" id="check6" name="colores" value="negro">
+                                                <label for="check6" id="c_negro"></label>
+                                            <input type="checkbox" id="check7" name="colores" value="cafe">
+                                                <label for="check7" id="c_cafe"></label>
+                                            <input type="checkbox" id="check8" name="colores" value="marino">
+                                                <label for="check8" id="c_marino"></label>
+                                            <input type="checkbox" id="check9" name="colores" value="rosa">
+                                                <label for="check9" id="c_rosa"></label>
+                                            <input type="checkbox" id="check10" name="colores" value="rojo">
+                                                <label for="check10" id="c_rojo"></label>
+                                            <input type="checkbox" id="check11" name="colores" value="verde">
+                                                <label for="check11" id="c_verde"></label>
+                                        </div>
+                                        <div class="form-group tallas_check" style="padding-left: 10px; padding-right:10px;">
+                                            <label class=" mb-1">Tallas Disponibles: </label>
+                                            <div class="row">
+                                                <div class="col-4 text-left">
+                                                    <input type="checkbox" id="tallaXch" name="tallas" value="XCH">
+                                                    <label class=" mb-1" for="tallaXch" style="padding-left: 22px;"><span></span>XCH</label>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <input type="checkbox" id="tallaCh" name="tallas" value="CH">
+                                                    <label class=" mb-1" for="tallaCh"><span></span>CH</label>
+                                                </div>
+                                                <div class="col-4 text-right">
+                                                    <input type="checkbox" id="tallaM" name="tallas" value="M">
+                                                    <label class=" mb-1" for="tallaM" style="padding-right: 30px;"><span></span>M</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-left">
+                                                    <input type="checkbox" id="tallaG" name="tallas" value="G">
+                                                    <label class=" mb-1" for="tallaG" style="padding-left: 22px;"><span></span>G</label>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <input type="checkbox" id="tallaXG" name="tallas" value="XG">
+                                                    <label class=" mb-1" for="tallaXG"><span></span>XG</label>
+                                                </div>
+                                                <div class="col-4 text-center"></div>
+                                            </div>
+                                        </div>
+                                        <div style="padding-left: 10px; padding-right:10px;">
+                                            <label class=" mb-1">Cantidad: </label>
+                                        </div>
+                                        <div class="form-group text-center" style="padding-left: 10px; padding-right:10px;">
+                                            <div class="input-group" style="width:150px;margin:0px auto;">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-number" data-type="minus" data-field="cantidad">
+                                                      <i class="fas fa-minus"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text" name="cantidad" class="form-control input-number" value="1" min="0" max="1000" style="border-radius: .25rem;">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-number" data-type="plus" data-field="cantidad">
+                                                      <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-xl-6 col-md-6">
+
+                                    <div class="card bg-light shadow-lg text-grey mb-4">
+                                        
+                                    </div>
+
+                                    <div class="text-center">   
+                                        <input type="submit" class="btn btn-primary btn-producto" value="Agregar Producto" />
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Tecnologías LongBit 2020</div>
+                            <div>
+                                <a href="#">Política de privacidad</a>
+                                &middot;
+                                <a href="#">Términos &amp; Condiciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/datatables-demo.js"></script>
+    </body>
+</html>
