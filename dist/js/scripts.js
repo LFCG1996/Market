@@ -112,10 +112,15 @@ function handleFileSelect(evt) {
       // Closure to capture the file information.
       reader.onload = (function(theFile) {
         return function(e) {
+            var cadena = escape(theFile.name),
+            separador = ".", 
+            id_imagen = cadena.split(separador);
           // Render thumbnail.
           var span = document.createElement('span');
+          span.setAttribute("id",id_imagen[0]);
+          span.setAttribute("class","contenedor_cerrar");
           span.innerHTML = ['<img class="img-file-input" src="', e.target.result,
-                            '" title="', escape(theFile.name), '"/>'].join('');
+                            '" title="', escape(theFile.name), '" /><div class="texto-encima" onClick="eliminar(\'',id_imagen[0],'\')"><a>x</a></div>'].join('');
           document.getElementById('list').insertBefore(span, null);
         };
       })(f);
@@ -126,4 +131,13 @@ function handleFileSelect(evt) {
   }
 
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+  function eliminar(id){
+    var imagen = document.getElementById(id);
+
+    var opcion = confirm("¿Eliminar?");
+    if (opcion == true) {
+        imagen.parentNode.removeChild(imagen);
+	}
+  }
 
