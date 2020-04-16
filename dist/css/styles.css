@@ -10531,6 +10531,7 @@ body {
 }
 #productName{
   border: 1px solid #3697f8;
+  border-radius: .25rem;
 }
 /*          Radio buttons             */
 
@@ -10721,4 +10722,38 @@ input[type=radio]:checked + label {
 .texto-encima:hover{
   color: rgb(120, 166, 253);
   border-color:rgb(120, 166, 253);
+}
+
+/*            Boton icono editar               */
+.btn-edit {
+  color: rgba(158, 147, 147, 0.808);
+  background-color: #fcfdfc00;
+  font-size: large;
+}
+
+.btn-edit:hover {
+  color: rgba(112, 108, 108, 0.808);
+  background-color: #fcfdfc00;
+  border-color: none;
+}
+.btn-edit:active {
+  color: rgba(158, 147, 147, 0.808);
+  background-color: #fcfdfc00;
+  border-color: none;
+}
+.btn-edit:focus, .btn-edit.focus {
+  color: rgba(158, 147, 147, 0.808);
+  background-color: #fcfdfc00;
+  border-color: none;
+  box-shadow: none;
+}
+.btn-edit.disabled, .btn-edit:disabled {
+  color: rgba(158, 147, 147, 0.808);
+  background-color: #fcfdfc00;
+  border-color: none;
+}
+.btn-edit:not(:disabled):not(.disabled):active, .btn-edit:not(:disabled):not(.disabled).active, .show > .btn-edit.dropdown-toggle {
+  color: rgba(158, 147, 147, 0.808);
+  background-color: #fcfdfc00;
+  border-color: none;
 }

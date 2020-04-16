@@ -141,3 +141,12 @@ function handleFileSelect(evt) {
 	}
   }
 
+  /* Activar y desactivar campo de texto */
+  function changeReadOnly(id){
+      if($("#"+id).attr("readonly")){
+        $("#"+id).removeAttr("readonly");
+      }else{
+        $("#"+id).attr("readonly","readonly");
+      }
+  }
+
