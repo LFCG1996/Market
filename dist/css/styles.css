@@ -10270,6 +10270,14 @@ body {
   padding-left: 2rem;
 }
 
+.btn-contratar{
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top:0.8rem;
+  padding-bottom:0.8rem;
+  border-radius: 2rem;
+}
+
 .btn-producto{
   padding-right: 1rem;
   padding-left: 1rem;
@@ -10756,4 +10764,23 @@ input[type=radio]:checked + label {
   color: rgba(158, 147, 147, 0.808);
   background-color: #fcfdfc00;
   border-color: none;
+}
+
+/*           imagenes perfil fotografo            */
+.img-perfil{
+  height: auto;
+  width: 80%;
+  border-radius:3rem;
+}
+
+.img-perfil-catalogo {
+  height: 85px;
+  width: 85px;
+  border-radius:.25rem;
+  margin: 10px 5px;
+}
+
+.img-colab{
+  height: auto;
+  width: 30%;
 }
